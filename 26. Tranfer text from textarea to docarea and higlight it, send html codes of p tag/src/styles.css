@@ -1,0 +1,56 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.container {
+  padding: 3rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.body-container {
+  width: 100%;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+.textarea {
+  /* border: 1px solid #e5e5e5; */
+
+  padding: 1rem 1rem;
+  border: none;
+  resize: none;
+  width: 92%;
+}
+
+.document-container {
+  margin-top: 2rem;
+}
+.document-container .para {
+  font-weight: bold;
+  color: #525252;
+}
+
+.document-body {
+  padding: 2rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  font-weight: 400;
+}
+
+.paragraph-highlight-class {
+  animation: change-color 2s ease-out;
+  display: inline;
+}
+
+@keyframes change-color {
+  0% {
+    background-color: #60a5fa;
+  }
+  100% {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,16 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.lightcn {
+  background-color: blue;
+  text-align: center;
+  height: 500px;
+}
+
+.darkcn {
+  background-color: rgb(57, 37, 7);
+  text-align: center;
+  height: 500px;
+}

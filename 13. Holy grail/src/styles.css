@@ -1,0 +1,59 @@
+/* 
+Since the direct children will be laid out in a vertical fashion, we add display: flex and flex-direction: column to that element as well. */
+
+#root {
+  /*  place 3 of them vertically
+   //header
+  //content
+  //footer
+   */
+  display: flex;
+  padding: 5px;
+  background-color: black;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+  padding: 12px;
+  text-align: center;
+}
+
+header {
+  background-color: tomato;
+  height: 60px;
+}
+
+footer {
+  background-color: slategray;
+  height: 100px;
+}
+
+.contentdiv {
+  /* // nav main sidebar (horizontally) */
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+}
+
+nav {
+  background-color: coral;
+  flex-shrink: 0;
+  width: 100px;
+}
+
+main {
+  background-color: moccasin;
+  flex-grow: 1;
+}
+
+aside {
+  background-color: sandybrown;
+  flex-shrink: 0;
+  width: 100px;
+}
+/* flex-shrink: 0 has to be added to <nav> and <aside> so that they don't shrink when the content in <main> is too wide. */

@@ -1,0 +1,49 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+}
+
+/* //tab buttons  ka flex */
+.maindiv {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(168, 158, 178);
+  margin-bottom: 2px;
+  padding: 3px;
+  gap: 8px;
+}
+
+/* //flex-items tabbuttons */
+.tabs-list {
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  padding: 3px;
+}
+
+.tabs-list-item {
+  --active-color: blueviolet;
+
+  background: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 6px 10px;
+}
+
+.tabs-list-item:hover {
+  border-color: var(--active-color);
+  color: var(--active-color);
+}
+
+.tabs-list-item--active {
+  border-color: var(--active-color);
+  background-color: var(--active-color);
+  color: #fff;
+}

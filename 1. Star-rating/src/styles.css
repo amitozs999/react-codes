@@ -1,0 +1,14 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+/* Insert star  content of each  star class used wale elem pe*/
+.star::before {
+  content: "\2606";
+  font-size: 25px;
+}
+.star-rated::before {
+  content: "\2605";
+  font-size: 25px;
+  color: tomato;
+}

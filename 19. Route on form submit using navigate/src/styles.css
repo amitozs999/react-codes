@@ -1,0 +1,22 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+form {
+  background-color: bisque;
+  width: 300px;
+  margin: 50px auto;
+}
+input {
+  width: 90%;
+  font-size: 18px;
+  padding: 10px;
+}
+
+label {
+  color: var(--white);
+  font-weight: 900;
+  font-size: 30px;
+  display: block;
+  margin: 15px 0;
+}
