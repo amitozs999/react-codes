@@ -1,0 +1,70 @@
+.heading {
+  text-align: center;
+}
+
+/* //conatins cards verically */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* //each card will have information with images */
+.card {
+  width: 400px;
+  height: 100px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+
+  display: grid;
+  grid-template-rows: 1fr;
+  /* //2 colums 1 for image other for info */
+  grid-template-columns: 0.3fr 1fr;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* //image ki div */
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 70px;
+  height: 70px;
+}
+
+/* //detail ki div */
+
+/* <div class="details">
+       <div class="row"> */
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* 2 rows places vertically inside detials flex div */
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name,
+.price {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.symbol,
+.percent {
+  font-size: 20px;
+}
+
+.percent {
+  color: red;
+}
