@@ -1,0 +1,9 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* //can import directly here our main.scss also */
+
+/* but we are import in some custom global css 
+and than importing that custom global css file in root component */

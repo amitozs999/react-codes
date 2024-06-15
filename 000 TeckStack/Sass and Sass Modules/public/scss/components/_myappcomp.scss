@@ -1,0 +1,23 @@
+@use "../abstracts/mixins" as *;
+
+.myclasspuppy {
+  @include puppycolor;
+}
+
+.myclassorange {
+  @include orangecolor;
+}
+
+.myclassgreen {
+  color: #008000;
+}
+
+.hideinlaptop {
+  //by default shown hoga
+  @include cmmq("400px") {
+    //hide jesi hi size exceeds 1000px (min ye hogi)
+
+    //display: none;
+    @include hiddenkaroji;
+  }
+}

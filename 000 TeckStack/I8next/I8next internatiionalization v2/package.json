@@ -1,0 +1,24 @@
+{
+  "name": "react-i18next",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://codesandbox.io/s/new",
+  "main": "src/index.js",
+  "dependencies": {
+    "i18next": "19.6.3",
+    "i18next-browser-languagedetector": "5.0.1",
+    "i18next-http-backend": "1.0.17",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-i18next": "11.7.0",
+    "react-scripts": "3.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

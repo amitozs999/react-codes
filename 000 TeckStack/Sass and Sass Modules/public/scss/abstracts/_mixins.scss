@@ -1,0 +1,18 @@
+@use "./variables" as *;
+
+@mixin cmmq($min) {
+  @media (min-width: $min) {
+    @content; //pass condition inside that media query wali
+  }
+}
+@mixin puppycolor {
+  color: $w-purple-2;
+}
+
+@mixin orangecolor {
+  color: $w-orange;
+}
+
+@mixin hiddenkaroji {
+  display: none;
+}
