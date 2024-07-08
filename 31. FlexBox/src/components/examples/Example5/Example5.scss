@@ -1,0 +1,38 @@
+@use "../../../mixins/Mixins.scss" as *;
+
+.container-5 {
+  display: flex;
+  flex-direction: row;
+  gap: $gap;
+  padding: $padding;
+  @include query(mobile) {
+    flex-direction: column;
+  }
+}
+
+.exp5-block-1 {
+  //will occupy 20% of the Available width
+  flex-grow: 2;
+  background-color: grey;
+}
+
+// Style Rules Right Block
+
+.exp5-block-2 {
+  //will occupy 80% of the Available width
+  flex-grow: 8;
+  background-color: yellow;
+}
+
+[class^="exp5-block-"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 4px solid $color;
+  height: 50px;
+
+  @include query(mobile) {
+    height: 25px;
+  }
+}

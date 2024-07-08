@@ -1,0 +1,71 @@
+@use "../../../mixins/Mixins.scss" as *;
+
+.container-6 {
+  display: flex;
+  flex-direction: column;
+  padding: $padding;
+  gap: $gap;
+  //padding and gao vertically mila he, so can delete from height distrbution to elements
+  margin-top: 20px;
+  background-color: lightgrey;
+}
+
+[class^="exp6-block-"] {
+  display: flex;
+  flex-direction: row;
+  gap: $gap;
+
+  //Removing Padding, Gap & divide by 3
+  height: (80vh -$gap * 2 -$padding * 2)/3;
+
+  // Style Rules for Mobile Version
+  @include query(mobile) {
+    flex-direction: column;
+  }
+}
+[class^="exp6-box-"] {
+  // To place the letter at center
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // Border, Border-radius & background-color
+  border: 1vh solid $color;
+  border-radius: 10px;
+  background-color: #c1c1c1;
+}
+
+//A
+.exp6-box-1 {
+  flex-basis: 100%;
+}
+
+//B & D
+.exp6-box-2,
+.exp6-box-5 {
+  flex-basis: 70%;
+}
+//E  & C
+.exp6-box-3,
+.exp6-box-4 {
+  flex-basis: 30%;
+}
+
+// Style Rules for Mobile Version
+
+@include query(mobile) {
+  .exp6-block-2 {
+    height: (100vh * 2)/3; // 66.66vh  //block 2 ki height 66 lenge
+  }
+  .exp6-block-3 {
+    flex-direction: row; //block 2 ki dir row
+  }
+
+  //   Selecting B, E, C, D
+  .exp6-box-2,
+  .exp6-box-3,
+  .exp6-box-4,
+  .exp6-box-5 {
+    flex-basis: 50%; //intialy 50 baki jaga huyi to puri le lega
+  }
+}

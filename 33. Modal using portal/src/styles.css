@@ -1,0 +1,32 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.modal-outer {
+  /* //default */
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  zindex: 10;
+}
+
+.modal {
+  /* //default */
+
+  position: fixed;
+  top: 10%;
+  right: 0;
+  bottom: 0;
+  left: 10%;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 500px;
+}

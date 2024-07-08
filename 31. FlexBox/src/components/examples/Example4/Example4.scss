@@ -1,0 +1,23 @@
+@use "../../../mixins/Mixins.scss" as *;
+
+.container-4 {
+    margin-top: 20px;
+    display: flex;
+    border: 1px solid black;
+    padding: 5px;
+    justify-content: space-evenly;
+    gap: 1px;
+  
+    @include query(mobile) {
+      flex-direction: column;
+      align-items: center;
+      //Setting gap for items Vertically
+      gap: $gap;
+    }
+  }
+  [class^="item-"] {
+    padding: 10px;
+    background-color: green;
+    width: 60%;
+  }
+  

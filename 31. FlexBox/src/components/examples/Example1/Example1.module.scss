@@ -1,0 +1,13 @@
+@use "../../../mixins/Mixins.scss" as *;
+// .container {
+//   display: flex;
+//   background-color: blue;
+//   flex-direction: row;
+
+//   justify-content: center;
+//   @include query(mobile) {
+//     flex-direction: column;
+//   }
+// }
+
+//   {/* <div class={xobj.container}> */} use with this

@@ -1,0 +1,42 @@
+@use "../../../mixins/Mixins.scss" as *;
+
+.container3 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  gap: $gap;
+  padding: $padding;
+  border: 1vh solid $color;
+}
+[class^="block-"] {
+  //for each  container
+  //To lay the boxes in a row.
+  display: flex;
+  flex-direction: row;
+  gap: $gap;
+
+  //Removing border(1vh+1vh), gap, & padding from the height
+  // And then equally distributing spaces between the
+  // .block-* classes by dividing it by 3
+
+  height: (100vh-2vh -$gap * 2-$padding * 2) / 3;
+
+  @include query(mobile) {
+    flex-direction: column;
+    height: 500px;
+  }
+}
+
+[class^="box-"] {
+  //for each conatiner items
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-basis: (100%)/3; // 33.33% each
+  //flex-grow:1; some corner pe spaccing issue so take basis for width
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #c1c1c1;
+}

@@ -1,0 +1,48 @@
+@use "../../../mixins/Mixins.scss" as *;
+
+.container2 {
+  margin-top: 10px;
+  display: flex;
+  background-color: rgb(58, 206, 92);
+  flex-direction: row;
+  padding: 5px;
+  height: 520px;
+
+  @include query(mobile) {
+    flex-direction: column;
+  }
+}
+
+.cont2firstitem {
+  flex: 1; /* //grow:1 */
+  order: 2;
+  background-color: antiquewhite;
+}
+
+.cont2secitem {
+  flex: 1;
+  order: 1;
+  background-color: aqua;
+
+  /* also act as flex conatainrer */
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(180, 180, 228);
+  padding: 10px;
+}
+
+.cont2-second-item-a {
+  flex: 1;
+  background-color: rgb(207, 185, 157);
+
+  /* is item ko bhi apne ap me ek container bana diya 
+    taki iska content center kar paye */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont2-second-item-b {
+  flex: 2;
+  background-color: rgb(224, 182, 128);
+}

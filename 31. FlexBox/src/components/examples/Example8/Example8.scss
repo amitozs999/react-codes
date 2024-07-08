@@ -1,0 +1,56 @@
+@use "../../../mixins/Mixins.scss" as *;
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+
+  height: 40px;
+}
+.nav-logo {
+  font-size: 1.5rem;
+  font-family: "Sans Serif";
+}
+.navbar-items {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin-right: 1rem;
+  gap: 10px;
+
+  @include query(mobile) {
+    flex-direction: column;
+    background-color: green;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+    display: none; //will hide this relative pop div on mobile
+    top: 90px;
+  }
+}
+
+.navbar-items-phone {
+  display: flex;
+  flex-direction: row;
+
+  @include query(mobile) {
+    flex-direction: column;
+    background-color: green;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+    display: block; //will show on mobile
+    top: 90px;
+  }
+}
+
+.hamburger {
+  display: none;
+
+  @include query(mobile) {
+    display: block;
+    cursor: pointer;
+  }
+}
